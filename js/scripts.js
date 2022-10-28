@@ -38,6 +38,7 @@ function beepBoop(number) {
 window.addEventListener("load", function() {
   let form = document.querySelector("form");
   form.addEventListener("submit", getResult);
+  form.addEventListener("reset", removeResult);
 }); 
 
 function getResult(event) {
@@ -52,4 +53,10 @@ function getResult(event) {
   document.body.append(h1);
   pElement.append("Your result is:" + result +".");
   document.body.append(pElement);
+}
+
+function removeResult (event) {
+  event.preventDefault();
+  h1.remove();
+  pElement.remove();
 }
