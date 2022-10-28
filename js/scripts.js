@@ -11,7 +11,12 @@ function beepBoop(number) {
       if ((stringArray[i][0] === '1') || (stringArray[i][1] === '1')) {
         let index = stringArray.indexOf(stringArray[i]);
         stringArray.splice(index, 1, "Beep!");
-        console.log(stringArray);
+      } else if ((stringArray[i][0] === '2') || (stringArray[i][1] === '2')) {
+        let index2 = stringArray.indexOf(stringArray[i]);
+        stringArray.splice(index2, 1, "Boop!");
+      } else if ((stringArray[i][0] === '3') || (stringArray[i][1] === '3')) {
+        let index3 = stringArray.indexOf(stringArray[i]);
+        stringArray.splice(index3, 1, "Won't you be my neighbor?");
       }
     }
   }
