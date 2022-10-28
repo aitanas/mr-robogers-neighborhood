@@ -16,3 +16,6 @@ function beepBoop(number) {
   }
   return array;
 }
+
+// Hierarchy of Substitutions
+// neighbor (3) > boop (2) > beep (1)
