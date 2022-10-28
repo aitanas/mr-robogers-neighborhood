@@ -1,8 +1,5 @@
 // Business logic
 
-// Hierarchy of Substitutions
-// neighbor (3) > boop (2) > beep (1)
-
 function createArray(number) {
   let array = [];
   for (let i = 0; i <= number; i++) {
@@ -38,7 +35,9 @@ function beepBoop(number) {
 window.addEventListener("load", function() {
   let form = document.querySelector("form");
   form.addEventListener("submit", getResult);
+}); 
 
+window.addEventListener("load", function() {
   let resetBtn = document.querySelector("button#reset");
   resetBtn.addEventListener("click", removeResult);
 }); 
