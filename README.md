@@ -20,7 +20,7 @@ Test: It will finally replace 3, in a single-digit array, with the string "Won't
 Code: beepBoop(4);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4]
 
-Test: It will replace two-digit numbers in the array containing 1 with the string "Beep!"
+Test: It will replace one-digit AND two-digit numbers in the array containing 1 with the string "Beep!"
 Code: beepBoop(11);
-Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"]
+Expected Output: [0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9, "Beep!", "Beep!"]
 ```
