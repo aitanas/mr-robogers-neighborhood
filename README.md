@@ -6,5 +6,9 @@
 Describe beepBoop()
 Test: It will return an array of numbers, counting from 0 to the user's inputted number.
 Code: beepBoop(10);
-Expected Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+Test: It will replace 1, in a single-digit array, with the string "Beep!"
+Code: beepBoop(4);
+Expected Output: [0, "Beep!", 2, 3, 4]
 ```
