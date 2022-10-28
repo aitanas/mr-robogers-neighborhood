@@ -1,9 +1,17 @@
+// Business logic
 
-function beepBoop(number) {
+// Hierarchy of Substitutions
+// neighbor (3) > boop (2) > beep (1)
+
+function createArray(number) {
   let array = [];
   for (let i = 0; i <= number; i++) {
     array.push(i);
   }
+  return array;
+}
+
+function beepBoop(array) {
   const stringArray = array.map(String);
   for (let i = 0; i <= stringArray.length; i++) {
     let lastElement = stringArray.length -1;
@@ -22,18 +30,12 @@ function beepBoop(number) {
   }
 }
 
-//   if (stringArray[i] === '1') {
-//     let index = stringArray.indexOf(stringArray[i]);
-//     stringArray.splice(index, 1, "Beep!");
-//     console.log(stringArray);
-//   } else if (stringArray[i] === '2') {
-//     let twoIndex = stringArray.indexOf(2);
-//     stringArray.splice(twoIndex, 1, "Boop!");
-//   } else if (stringArray[i] === '3') {
-//     let threeIndex = stringArray.indexOf(3);
-//     stringArray.splice(threeIndex, 1, "Won't you be my neighbor?");
-//   }
-// };
+// UI logic
+window.addEventListener("load", function() {
+  let form = document.querySelector("form");
+  form.addEventListener("submit", getResult);
+}); 
 
-// Hierarchy of Substitutions
-// neighbor (3) > boop (2) > beep (1)
+function getResult(event) {
+  event.preventDefault();
+}
