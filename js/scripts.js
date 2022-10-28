@@ -9,6 +9,9 @@ function beepBoop(number) {
     } else if (array[i] === 2) {
       let twoIndex = array.indexOf(2);
       array.splice(twoIndex, 1, "Boop!")
+    } else if (array[i] === 3) {
+      let threeIndex = array.indexOf(3);
+      array.splice(threeIndex, 1, "Won't you be my neighbor?")
     }
   }
   return array;
