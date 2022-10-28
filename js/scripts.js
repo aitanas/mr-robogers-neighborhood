@@ -38,18 +38,20 @@ function beepBoop(number) {
 window.addEventListener("load", function() {
   let form = document.querySelector("form");
   form.addEventListener("submit", getResult);
-  form.addEventListener("reset", removeResult);
+
+  let resetBtn = document.querySelector("button#reset");
+  resetBtn.addEventListener("click", removeResult);
 }); 
 
 function getResult(event) {
   event.preventDefault();
 
   const numInput = document.getElementById("numInput").value;
-  const h1 = document.createElement("h1");
+  const h2 = document.createElement("h2");
   const pElement = document.createElement("p");
   const result = beepBoop(numInput);
 
-  h1.append("Results:");
+  h2.append("Results:");
   document.body.append(h1);
   pElement.append("Your result is:" + result +".");
   document.body.append(pElement);
@@ -57,6 +59,8 @@ function getResult(event) {
 
 function removeResult (event) {
   event.preventDefault();
-  h1.remove();
+  const h2 = document.querySelector("h2");
+  const pElement = document.querySelector("p");
+  h2.remove();
   pElement.remove();
 }
