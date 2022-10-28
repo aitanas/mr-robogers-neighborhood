@@ -44,12 +44,12 @@ function getResult(event) {
   event.preventDefault();
 
   const numInput = document.getElementById("numInput").value;
-  // const h1 = document.createElement("h1");
-  // const pElement = document.createElement("p");
-  const array = createArray(numInput);
-  const result = beepBoop(array);
-  document.getElementById("span#result") = result;
+  const h1 = document.createElement("h1");
+  const pElement = document.createElement("p");
+  const result = beepBoop(numInput);
 
-  // h1.append("Results:");
-  // pElement.append("Your result is:" + result +".");
+  h1.append("Results:");
+  document.body.append(h1);
+  pElement.append("Your result is:" + result +".");
+  document.body.append(pElement);
 }
