@@ -13,7 +13,7 @@ function createArray(number) {
 
 function beepBoop(array) {
   const stringArray = array.map(String);
-  for (let i = 0; i = stringArray.length; i++) {
+  for (let i = 0; i < stringArray.length; i++) {
     let lastElement = stringArray.length -1;
     if (lastElement.length = 2) {
       if ((stringArray[i][0] === '1') || (stringArray[i][1] === '1')) {
