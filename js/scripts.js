@@ -13,7 +13,7 @@ function createArray(number) {
 
 function beepBoop(array) {
   const stringArray = array.map(String);
-  for (let i = 0; i <= stringArray.length; i++) {
+  for (let i = 0; i <= stringArray.length -1; i++) {
     let lastElement = stringArray.length -1;
     if (lastElement.length = 2) {
       if ((stringArray[i][0] === '1') || (stringArray[i][1] === '1')) {
@@ -38,4 +38,16 @@ window.addEventListener("load", function() {
 
 function getResult(event) {
   event.preventDefault();
+
+  const numInput = document.getElementById("numInput").value;
+  const h1 = document.createElement("h1");
+  const div = document.createElement("div")
+  const pElement = document.createElement("p");
+  const array = createArray(numInput);
+  const result = beepBoop(array);
+
+  div.append();
+  h1.append("Results:");
+  pElement.append("Your result is:" + result +".");
+
 }
