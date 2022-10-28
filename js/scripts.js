@@ -11,7 +11,11 @@ function createArray(number) {
   return array;
 }
 
-function beepBoop(array) {
+function beepBoop(number) {
+  let array = [];
+  for (let i = 0; i <= number; i++) {
+    array.push(i);
+  }
   const stringArray = array.map(String);
   for (let i = 0; i < stringArray.length; i++) {
     let lastElement = stringArray.length -1;
