@@ -11,4 +11,8 @@ Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 Test: It will replace 1, in a single-digit array, with the string "Beep!"
 Code: beepBoop(4);
 Expected Output: [0, "Beep!", 2, 3, 4]
+
+Test: It will also replace 2, in a single-digit array, with the string "Boop!"
+Code: beepBoop(4);
+Expected Output: [0, "Beep!", "Boop!", 3, 4]
 ```
