@@ -53,7 +53,7 @@ Code: beepBoop(13);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"]
 
 Test: It will replace one-digit, two-digit, AND three-digit numbers in the array with "Beep!", "Boop!", and "Won't you be my neighbor?" for integers containing 1, 2, and 3, respectively.
-Code: beepBoop(101);
+Code: beepBoop(103);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4 ... 99, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"]
 ```
 

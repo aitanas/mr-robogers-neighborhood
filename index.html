@@ -7,13 +7,17 @@
   <title>Mr. Roboger's Neighborhood</title>
 </head>
 <body>
-  <container>
-    <form id="form">
-      <label for="numInput">Enter a number.</label>
-      <input type="number" id="numInput" name="numInput">
-      <button type="submit" id="submit">Submit!</button>
-    </form>
-    <button type="reset" name="reset">Clear</button>
-  </container>
+  <div class="container">
+    <h1>Mr Roboger's Neighborhood</h1>
+    <div class="jumbotron">
+      Welcome! We are so happy to have you.
+      <form id="form">
+        <label for="numInput">Please enter a number.</label><br>
+        <input type="number" id="numInput" name="numInput" class="form-control-lg"><br>
+        <button type="submit" id="submit" class="btn btn-dark btn-lg">Submit!</button>
+        <button type="button" id="reset" name="reset" class="btn btn-light btn-lg">Clear</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
