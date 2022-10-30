@@ -32,15 +32,6 @@ function beepBoop(number) {
 }
 
 // UI logic
-window.addEventListener("load", function() {
-  let form = document.querySelector("form");
-  form.addEventListener("submit", getResult);
-}); 
-
-window.addEventListener("load", function() {
-  let resetBtn = document.querySelector("button#reset");
-  resetBtn.addEventListener("click", removeResult);
-}); 
 
 function getResult(event) {
   event.preventDefault();
@@ -49,11 +40,12 @@ function getResult(event) {
   const h2 = document.createElement("h2");
   const pElement = document.createElement("p");
   const result = beepBoop(numInput);
+  const body = document.body
 
   h2.append("Results:");
-  document.body.append(h1);
+  body.append(h2);
   pElement.append("Your result is:" + result +".");
-  document.body.append(pElement);
+  body.append(pElement);
 }
 
 function removeResult (event) {
@@ -63,3 +55,10 @@ function removeResult (event) {
   h2.remove();
   pElement.remove();
 }
+
+window.addEventListener("load", function() {
+  let form = document.querySelector("form");
+  form.addEventListener("submit", getResult);
+  let resetBtn = document.querySelector("button#reset");
+  resetBtn.addEventListener("click", removeResult);
+}); 
