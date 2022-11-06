@@ -1,13 +1,5 @@
 // Business logic
 
-function createArray(number) {
-  let array = [];
-  for (let i = 0; i <= number; i++) {
-    array.push(i);
-  }
-  return array;
-}
-
 function beepBoop(number) {
   let array = [];
   for (let i = 0; i <= number; i++) {
@@ -26,6 +18,49 @@ function beepBoop(number) {
         stringArray.splice(index1, 1, "Beep!"); } 
     } return stringArray;
 }
+
+function beepBoop(number) { 
+  let array = [];
+  for (let i = 0; i <= number; i++) {
+    array.push(i);
+  }
+  const string = array.join(" ");
+  for (let i = 0; i < string.length; i++) {
+    if 
+    string.replace(/3/g, "Won't you be my neighbor?");
+    string.replace(/2/g, "Boop!");
+    string.replace(/1/g, "Beep!");
+  } return string;
+}
+
+function beepBoop(number) {
+  let array = [];
+  for (let i = 0; i <= number; i++) {
+    array.push(i);
+    if (array[i].includes('3')) {
+      array.splice(array[i], 1, "Won't you be my neighbor?");
+    } else if (array[i].includes('2')) {
+      array.splice(array[i], 1, "Boop!");
+    } else if (array[i].includes('1')) {
+      array.splice(array[i], 1, "Beep!");
+    }  
+  } return array;
+}
+
+  const stringArray = array.map(String);
+  for (let i = 0; i < stringArray.length; i++) {
+      if (stringArray[i].includes('3')) {
+        let index3 = stringArray.indexOf(stringArray[i]);
+        stringArray.splice(index3, 1, "Won't you be my neighbor?");
+      } else if (stringArray[i].includes('2')) {
+        let index2 = stringArray.indexOf(stringArray[i]);
+        stringArray.splice(index2, 1, "Boop!");
+      } else if (stringArray[i].includes('1')) {
+        let index1 = stringArray.indexOf(stringArray[i]);
+        stringArray.splice(index1, 1, "Beep!"); } 
+    } return stringArray;
+}
+
 
 // UI logic
 
