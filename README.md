@@ -3,7 +3,7 @@
 
 ##### Mr. Roboger's Neighborhood is a JavaScript application where the user inputs a number and receives a message from Mr. Roboger himself. The message is an array counting from 0 to the inputted number, only Mr. Roboger cannot say the numbers 1, 2, or 3! Instead, he says *Beep!*, *Boop!* or *Won't you be my neighbor?*.
 
-###### This silly application was created for Epicodus's third independent project.
+###### This silly application was created for Epicodus's third independent project."
 
 ## Technologies Used
 
